@@ -15,9 +15,9 @@
 
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
-        <link href="theme.css" rel="stylesheet">
+        <link href="../theme.css" rel="stylesheet">
 
-        <link href="portfolio.css" rel="stylesheet">
+        <link href="../portfolio.css" rel="stylesheet">
 
     </head>
 
@@ -29,20 +29,26 @@
                 
                 <UL class="menu-list">
                     <li>
-                        <a href="index.html">Home</a>
+
+                        <a href="../index.html">Home</a>
                         <a href="new-pages/about.html">About</a>
                         <a href="new-pages/Resume.html">Resume</a>
                         <a href="new-pages/ProjectsPage.html">Projects</a>
+
+                        
                     </li>
 
                 </UL>
 
             </div>
 
-            <h1 class="app-header">Tierre's Personal Portfolio</h1>
+            <h1 class="app-header">About</h1>
 
             <div class="assign-content">
 
+                    <div class="card">
+
+                        <div class="card-title">Tierre Green the Developer</div>
                     </div>
                 </div>
             </div>
@@ -62,6 +68,21 @@
             </div>
         </div>
 
-        
+        <script>
+            var myIndex = 0;
+            carousel();
+            
+            function carousel() {
+              var i;
+              var x = document.getElementsByClassName("newSlides");
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+              }
+              myIndex++;
+              if (myIndex > x.length) {myIndex = 1}    
+              x[myIndex-1].style.display = "block";  
+              setTimeout(carousel, 2000); // Change image every 2 seconds
+            }
+            </script>
     </body>
 </html>

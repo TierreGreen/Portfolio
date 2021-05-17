@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+    <head>
+
+        <meta charset="UTF-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Tierre Green's Portfolio</title>
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,700;1,300&family=Rubik:ital,wght@0,300;0,400;0,700;1,300&family=Source+Sans+Pro:wght@300;400;700&display=swap" rel="stylesheet">
+
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+        <link href="../theme.css" rel="stylesheet">
+
+        <link href="../portfolio.css" rel="stylesheet">
+
+    </head>
+
+    <body class="light-theme">
+
+        <div class="container">
+
+            <div class="menu-container">
+                
+                <UL class="menu-list">
+                    <li>
+
+                        <a href="../index.html">Home</a>
+                        <a href="new-pages/about.html">About</a>
+                        <a href="new-pages/Resume.html">Resume</a>
+                        <a href="new-pages/ProjectsPage.html">Projects</a>
+
+                    </li>
+
+                </UL>
+
+            </div>
+
+            <h1 class="app-header">Projects</h1>
+
+            <div class="assign-content">
+
+                <div class="card-grid">
+                    <div class="card">
+
+                        <div class="card-title">BellVision: The Life of a Community Leader</div>
+
+                        <div class="card-content">
+                            <a href="../../bioSite/index.html" target="_blank">
+                                <div class="slideHead">
+                                    <img class="newSlides" src="../../bioSite/images/html/HellCat.jpg" alt="Man with Dodge Charger Hellcat">
+                        
+                                    <img class="newSlides" src="../../bioSite/images/html/Hell Cat Dummy.jpg" alt="Dodge Charger and Challenger Hellcats">
+                        
+                                    <img class="newSlides" src="../../bioSite/images/html/King and Queen Bell.jpg" alt="Couple at a Ball">
+                                    
+                                    <img class="newSlides" src="../../bioSite/images/html/Bell and Trey.jpg" alt="Father and his son playing with a Power Wheel">
+                        
+                                    <img class="newSlides" src="../../bioSite/images/html/The Boys.jpg" alt="Two Young Boys in a Car">
+                        
+                                    <img class="newSlides" src="../../bioSite/images/html/Jacii Bell.jpg" alt="Little Girl in her Father's Forty-Niners Hat">
+                                
+                                </div>
+
+                            </a>
+
+                            </figure>
+                            <figcaption>Out of the Darkness Came a RedEyed Knight Rider</figcaption>
+                            </figure>
+
+                        </div>
+                    </div>
+
+                    <div class="card">
+
+                        <div class="card-title"> Web 231 Landing Page</div>
+
+                        <div class="card-content">
+
+                            <a href="../web-231/index.html" target="_blank">
+                                <div>
+                                    <img src="../WEB-231.png" alt="">
+
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+
+                        <div class="card-title"> Web 330 Landing Page</div>
+
+                        <div class="card-content">
+
+                            <a href="../../web-330/index.html" target="_blank">
+                                <div>
+                                    <img src="../WEB330.png" alt="">
+
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-container">
+                <footer>
+
+                    <ul>
+
+                        <li><a href="https://github.com/TierreGreen?tab=repositories" target="_blank">My Github</a></li>
+                        <li><a href="https://www.bellevue.edu/degrees/bachelor/web-development-bs/" target="_blank">BUWebDev</a></li>
+                        <li><a href="#">BU Youtube</a></li>
+                        <li><a href="https://github.com/buwebdev/web-330" target="_blank">Web330 Github</a></li>
+
+                    </ul>
+                </footer>
+            </div>
+        </div>
+
+        <script>
+            var myIndex = 0;
+            carousel();
+            
+            function carousel() {
+              var i;
+              var x = document.getElementsByClassName("newSlides");
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+              }
+              myIndex++;
+              if (myIndex > x.length) {myIndex = 1}    
+              x[myIndex-1].style.display = "block";  
+              setTimeout(carousel, 2000); // Change image every 2 seconds
+            }
+            </script>
+    </body>
+</html>

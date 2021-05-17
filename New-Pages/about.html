@@ -1,3 +1,10 @@
+<!--
+    Author: Tierre Green
+    Title: Portfolio
+    Date: May 16, 2021
+    Description: Tierre Green Portfolio
+-->
+
 <!DOCTYPE html>
 <html lang="en-US">
 
@@ -30,10 +37,12 @@
                 <UL class="menu-list">
                     <li>
 
-                        <a href="../index.html">Home</a>
-                        <a href="new-pages/about.html">About</a>
-                        <a href="new-pages/Resume.html">Resume</a>
-                        <a href="new-pages/ProjectsPage.html">Projects</a>
+                        <a href="/Portfolio/index.html">Home</a>
+                        <a href="/Portfolio/New-Pages/about.html">About</a>
+                        <a href="/Portfolio/New-Pages/Resume.html">Resume</a>
+                        <a href="/Portfolio/New-Pages/ProjectsPage.html">Projects</a>
+                        <a href="/Portfolio/New-Pages/database.html">DB Diagrams</a>
+                        <a href="/Portfolio/New-Pages/api.html">API</a>
 
                         
                     </li>
@@ -46,12 +55,49 @@
 
             <div class="assign-content">
 
-                    <div class="card">
+                    <div class="card" id="about-card">
 
                         <div class="card-title">Tierre Green the Developer</div>
+
+                        <div class="card-content">
+
+                            <img src="/Portfolio/21248608_10103437350983043_966246082002706376_o.jpg" alt="Father and children">
+
+                            <br />
+
+                            <p><em>
+                                Tierre Green was bord and raised in Omaha, Nebraska where he developed a love for creation. Many summers he spend his time trying to figure out how to draw buildings or cars. One of the things that he loved about them was how they were constructed. He began to enjoy the idea of construction so much that he began to play around with coding on code academy. Fast forward a few years and He is now studying to become a Web Developer and leverage his newly established skills to find a position working with a company that leverages his ability for creativity and problem solving. He currently resides in Tallahassee, FL but is open to opportunities around the states.
+                            </em></p>
+                        </div>
+                    </div>
+
+                    <br />
+
+                    <div class="card">
+
+                        <div class="card-title">
+                            Bucket List
+                        </div>
+
+                        <div class="card-content">
+
+                            <ul>
+
+                                <li>1: Visit Japan for Three Months.</li>
+                                <li>2: Buy a home on the beach or the lake.</li>
+                                <li>3: Rebuild a Ford Mustang and Ford F100 with my son.</li>
+                                <li>4: Visit Egypt and see the Pyramids.</li>
+                                <li>5: Goto the World Cup.</li>
+                                <li>6: Design my forever home and build it on an acreage.</li>
+                                <li>7: Have a Theater Room in my house with stadium style seating.</li>
+                                <li>8: Get 10 or more additional tattoos.</li>
+        
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
+            <br />
 
             <div class="footer-container">
                 <footer>
@@ -68,21 +114,5 @@
             </div>
         </div>
 
-        <script>
-            var myIndex = 0;
-            carousel();
-            
-            function carousel() {
-              var i;
-              var x = document.getElementsByClassName("newSlides");
-              for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";  
-              }
-              myIndex++;
-              if (myIndex > x.length) {myIndex = 1}    
-              x[myIndex-1].style.display = "block";  
-              setTimeout(carousel, 2000); // Change image every 2 seconds
-            }
-            </script>
     </body>
 </html>

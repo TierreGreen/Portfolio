@@ -77,6 +77,10 @@ a {
     margin: 2%;
 }
 
+#profile-pic {
+    width: 32rem;
+    height: 40rem;
+}
 #about-card {
 }
 

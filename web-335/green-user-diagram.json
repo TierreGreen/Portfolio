@@ -1,0 +1,39 @@
+
+{
+    "user": {
+    "id":1,
+    "name":"Green, Tierre",
+    "emailAddress":"tigreen@my365.bellevue.edu",
+    "role": [
+        {
+            "id":1,
+            "user":1,
+            "userRole":[
+                {
+                    "techRole": "Junior Developer",
+                    "description": "Role Description Template",
+                    "payRate": 25.00
+                }
+            ]
+        }
+
+    ],
+
+    "birthDate":[
+        {
+            "month":2,
+            "day":4,
+            "year":1985
+        }
+    ],
+
+    "dependents": [
+        {
+            "qty":5,
+            "spouse":0,
+            "maleChild":1,
+            "femaleChild":4
+        }
+    ]
+}
+}
